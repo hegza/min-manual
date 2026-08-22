@@ -344,7 +344,7 @@ are supported when documenting any type of program or code.
       data.push(license)
       data = data.map(item => {if item != none {h(1fr) + item + h(1fr)}})
       
-      block(width: 90%, data.join())
+      block(width: 90%, data.slice(1, 3).join())
       v(1em)
       
       for author in authors {
