@@ -60,6 +60,7 @@ are supported when documenting any type of program or code.
   comment-delim: auto, /// <- array of strings
     /// #raw(repr(syntax.doc-comment))\ Set documentation comment delimiters. |
     /// <comment-delim>
+  fonts: ("tex gyre heros"),
   body,
 ) = context {
   import "@preview/nexus-tools:0.1.0": storage, default, get
@@ -148,7 +149,7 @@ are supported when documenting any type of program or code.
     let data = utils.purl(package)
     let authors = authors
     let by = by
-    let font = (font: ("tex gyre heros"))
+    let font = (font: fonts)
     
     assert.ne(data, none, message: "Invalid #manual(package): " + package)
     
