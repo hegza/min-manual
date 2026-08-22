@@ -148,7 +148,7 @@ are supported when documenting any type of program or code.
     let data = utils.purl(package)
     let authors = authors
     let by = by
-    let font = (font: ("tex gyre heros", "arial"))
+    let font = (font: ("tex gyre heros"))
     
     assert.ne(data, none, message: "Invalid #manual(package): " + package)
     
